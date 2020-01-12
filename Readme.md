@@ -87,6 +87,18 @@ services:
       - /var/www/node_modules
     depends_on:
       - postgres
+    environment:
+      - DEPLOY_ENV=dev
+      # - DEPLOY_ENV=prod
+  studio:
+    image: ronnf89/prisma2fancydev
+    volumes:
+      - .:/src/app
+      - /var/www/node_modules
+    depends_on:
+      - postgres
+    environment:
+      - DEPLOY_ENV=studio
 
   postgres:
     image: postgres
