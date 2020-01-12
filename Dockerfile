@@ -8,8 +8,8 @@ RUN npm i -g prisma2
 
 RUN mkdir -p /src/app
 
-COPY start.sh /src/app/start.sh
+COPY start.sh /start.sh
 
-RUN chmod +x /src/app/start.sh
+RUN chmod +x /start.sh
 
-ENTRYPOINT ["bash", "/src/app/start.sh"]
+ENTRYPOINT ["bash", "/start.sh"]
