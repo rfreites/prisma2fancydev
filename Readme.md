@@ -102,7 +102,7 @@ services:
     environment:
       - DEPLOY_ENV=studio
     ports:
-      - 8082:5000
+      - 8082:5555
 
   postgres:
     image: postgres

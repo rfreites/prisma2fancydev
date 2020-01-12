@@ -1,6 +1,6 @@
 FROM node:latest
 
-EXPOSE 4000 5000
+EXPOSE 4000 5555
 
 ENV DEPLOY_ENV="default"
 
