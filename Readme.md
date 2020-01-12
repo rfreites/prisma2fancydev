@@ -90,6 +90,8 @@ services:
     environment:
       - DEPLOY_ENV=dev
       # - DEPLOY_ENV=prod
+    ports:
+      - 8080:4000
   studio:
     image: ronnf89/prisma2fancydev
     volumes:
@@ -99,6 +101,8 @@ services:
       - postgres
     environment:
       - DEPLOY_ENV=studio
+    ports:
+      - 8082:5000
 
   postgres:
     image: postgres
