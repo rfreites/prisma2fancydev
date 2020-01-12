@@ -6,6 +6,8 @@ ENV DEPLOY_ENV="default"
 
 RUN npm i -g prisma2
 
+RUN prisma2 lift
+
 RUN mkdir -p /src/app
 
 COPY start.sh /start.sh
